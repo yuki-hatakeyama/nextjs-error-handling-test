@@ -1,5 +1,5 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": ["next/core-web-vitals", "prettier"], // ESLint と Prettier のコード整形がバッティングしないようにするため、 prettier は最後尾。
   "rules": {
     // ES Lint の rules
     "quotes": ["error", "double"], // 文字列の指定はダブルクォート
