@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // ES Lint の rules
+    "quotes": ["error", "double"], // 文字列の指定はダブルクォート
+    "no-var": "error", // var の使用禁止
+    "eqeqeq": ["error", "always"] // "=="（等価演算子） の使用禁止、"==="厳密等価演算子を使用
+  }
 }
