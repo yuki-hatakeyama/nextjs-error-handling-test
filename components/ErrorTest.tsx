@@ -1,6 +1,6 @@
 export default function ErrorExample() {
   const nextTest = () => {
-    console.log("on！！");
+    console.log("ErrorExample");
     // throw new Error();
   };
 
@@ -9,7 +9,7 @@ export default function ErrorExample() {
       nextTest();
       throw new Error();
     } catch (error) {
-      throw error;
+      throw new Error(error);
       // console.log("error", error);
       //   throw error.code;
     }
